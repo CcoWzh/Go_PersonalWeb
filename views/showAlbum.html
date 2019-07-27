@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Show Album</title>
+    <link rel="icon" href="../static/img/mylog.png">
+
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap-4.0.0/docs/4.0/examples/album/album.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">About</h4>
+                    <p class="text-muted">
+                        以下照片，皆为网络爬取，本人没有任何版权，也不做任何商业用途
+                    </p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.win4000.com/" class="text-white">照片来源</a></li>
+                        <li><a href="https://github.com/CcoWzh" class="text-white">github</a></li>
+                        <li><a href="/" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                <strong>相册</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="container">
+
+<div class="col-xs-16 col-sm-11">
+<div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../static/album/{{.name}}/{{.fileName}}" alt="...">
+                <div class="carousel-caption">
+                    <h3>
+                        {{.name}}
+                    </h3>
+                </div>
+            </div>
+            {{range .number}}
+            <div class="item">
+                <img src="../static/album/{{.Dir}}" alt="...">
+                <div class="carousel-caption">
+                    <a href="../static/album/{{.Dir}}">
+                    <h3>{{.Dir}}</h3></a>
+                </div>
+            </div>
+            {{end}}
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+        {{range .number}}
+
+            <div class="col-md-2">
+                {{/*mb-x 行间距*/}}
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="../static/album/{{.Dir}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <a href="../static/album/{{.Dir}}">{{.Dir}}</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        {{end}}
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="col-xs-2 col-sm-1 sidebar-offcanvas" id="sidebar">
+    <div class="list-group">
+        <a href="/" class="list-group-item">首页</a>
+        <a href="/album" class="list-group-item active">相册</a>
+        <a href="/blog" class="list-group-item">博客</a>
+        <a href="#" class="list-group-item">留言</a>
+
+    </div>
+</div><!--/.sidebar-offcanvas-->
+
+</div>
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../static/js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../static/js/bootstrap.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="../static/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../static/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+
+<script src="../static/bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+</body>
+</html>
