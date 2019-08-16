@@ -15,8 +15,10 @@ func init() {
 	 */
 	beego.Router("/blog/editor/", &controllers.Editor{})
 	beego.Router("/blog", &controllers.Blog{}, "get:ShowBlog")
-	beego.Router("/blog/show/:pathName", &controllers.Blog{}, "get:ShowFile")
+	beego.Router("/blog/show/*", &controllers.Blog{}, "get:ShowFile")
 	beego.Router("/blog/blockChain",&controllers.Blog{}, "get:ShowBlockChain")
+	beego.Router("/blog/Cryptography",&controllers.Blog{}, "get:ShowCryptography")
+	beego.Router("/blog/Technology",&controllers.Blog{}, "get:ShowTechnology")
 	/**
 	相册展示
 	 */

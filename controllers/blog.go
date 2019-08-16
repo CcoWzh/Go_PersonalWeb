@@ -5,25 +5,119 @@ import (
 	"io/ioutil"
 	"fmt"
 	"os"
+	"bufio"
+	"strings"
 )
 
 type Blog struct {
 	beego.Controller
 }
 
+//这个命名还必须是大写的，真傻比
+type BlogContext struct {
+	Name      string
+	Context   string
+	Url 	  string
+}
+
 func (this *Blog) ShowBlog() {
 	this.TplName = "blog.html"
 }
 
-func (this *Blog) ShowBlockChain() {
+//读取文章里的1024位文字
+func ReadArticle(path string) (string)  {
+	f, err := os.Open(path)
+	if err != nil {
+		fmt.Println(err)
+		return "error1"
+	}
+	defer f.Close()
+
+	buf := make([]byte, 512) //一次读取1024个字节
+	bfRd := bufio.NewReader(f)
+	_, err = bfRd.Read(buf)
+	if err != nil{
+		fmt.Println(err)
+		return "error2"
+	}
+
+	str := string(buf)
+
+	//fmt.Println("-------- 原字符串 ----------")
+	//fmt.Println(str)
+	// 去除空格
+	str = strings.Replace(str, " ", "", -1)
+	// 去除换行符
+	str = strings.Replace(str, "\n", "", -1)
+	str = strings.Replace(str, "#", "", -1)
+	//str = strings.Replace(str, "ObliviousTransfer（OT）---", "", -1)
+	//fmt.Println("-------- 去除空格与换行后 ----------")
+	//fmt.Println(str)
+
+	return str
+}
+
+func (this *Blog) ShowCryptography() {
 	path := "document/现代密码学"
 	code,file := ReadDirectory(path)
 	if code == false{
-		fmt.Println("ooooo")
+		fmt.Println(code)
 	}
 
-	fmt.Println(file)
+	bolgInfo := make([]BlogContext,len(file))
 
+	for i:=0;i<len(file) ;i++  {
+		bolgInfo[i].Name = string(file[i])
+		bolgInfo[i].Context = ReadArticle(path+"/"+file[i])
+		bolgInfo[i].Url = "现代密码学"+"/"+file[i]
+	}
+
+	//fmt.Println(bolgInfo[5].Name+" ========= "+bolgInfo[5].Context)
+
+	this.TplName = "blockchain.html"
+	this.Data["bolgList"] = bolgInfo
+}
+
+func (this *Blog) ShowBlockChain() {
+	path := "document/Fabric搭建"
+	code,file := ReadDirectory(path)
+	if code == false{
+		fmt.Println(code)
+	}
+
+	bolgInfo := make([]BlogContext,len(file))
+
+	for i:=0;i<len(file) ;i++  {
+		bolgInfo[i].Name = string(file[i])
+		bolgInfo[i].Context = ReadArticle(path+"/"+file[i])
+		bolgInfo[i].Url = "Fabric搭建"+"/"+file[i]
+	}
+
+	//fmt.Println(bolgInfo[5].Name+" ========= "+bolgInfo[5].Context)
+
+	this.TplName = "blockchain.html"
+	this.Data["bolgList"] = bolgInfo
+}
+
+func (this *Blog) ShowTechnology() {
+	path := "document/Docker"
+	code,file := ReadDirectory(path)
+	if code == false{
+		fmt.Println(code)
+	}
+
+	bolgInfo := make([]BlogContext,len(file))
+
+	for i:=0;i<len(file) ;i++  {
+		bolgInfo[i].Name = string(file[i])
+		bolgInfo[i].Context = ReadArticle(path+"/"+file[i])
+		bolgInfo[i].Url = "Docker"+"/"+file[i]
+	}
+
+	//fmt.Println(bolgInfo[5].Name+" ========= "+bolgInfo[5].Context)
+
+	this.TplName = "blockchain.html"
+	this.Data["bolgList"] = bolgInfo
 }
 
 func IsDirExist(dir string) bool {
@@ -48,15 +142,16 @@ func ReadDirectory(dir string) (b bool, fl []string) {
 	files, _ := ioutil.ReadDir(dir)
 
 	var fileList []string
-	fileList = make([]string, len(files))
+	//fileList = make([]string, len(files))
 
-	i := 0
+	//i := 0
 	for _, file := range files {
 		if file.IsDir() {
 			continue
 		} else {
-			fileList[i] = file.Name()
-			i++
+			//fileList[i] = file.Name()
+			fileList = append(fileList, file.Name())
+			//i++
 		}
 	}
 
@@ -73,7 +168,7 @@ func ReadDirectory(dir string) (b bool, fl []string) {
  */
 func (this* Blog)ShowFile()  {
 	fmt.Println("执行到这里了")
-	path := this.Ctx.Input.Param(":pathName")
+	path := this.Ctx.Input.Param(":splat")
 	filePath := "document/"+path
 	fmt.Println("文件路径是："+filePath)
 

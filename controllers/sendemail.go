@@ -24,9 +24,10 @@ func (this* SendEmail)ContactMe()  {
 	fmt.Println(name+"\n"+email+"\n"+subject+"\n"+message)
 
 	body := "<h2> 发送人是 <i>"+name+"</i></h2>"+"<br>"+
-		"<p>"+message+"</p>"
+		"<p>发送人邮件是："+email+"<p>"+
+		"<br>"+ "<p>"+message+"</p>"
 
-	err := models.SendMail(email,subject,body)
+	err := models.SendMail("18512444608@163.com",subject,body)
 	if err != nil{
 		fmt.Println("发送失败")
 		fmt.Println(err)

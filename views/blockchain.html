@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人博客网站</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/base.css" rel="stylesheet">
+    <link href="../static/css/m.css" rel="stylesheet">
+    <link href="../static/css/index.css" rel="stylesheet">
+
+    <script>
+        window.onload = function () {
+            var oH2 = document.getElementsByTagName("h2")[0];
+            var oUl = document.getElementsByTagName("ul")[0];
+            oH2.onclick = function () {
+                var style = oUl.style;
+                style.display = style.display == "block" ? "none" : "block";
+                oH2.className = style.display == "block" ? "open" : ""
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="tophead">
+        <div class="logo"><a href="/">HUI个人博客</a></div>
+
+        <nav class="topnav" id="topnav">
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="/about">关于我</a></li>
+                <li><a href="/blog">博客</a></li>
+                <li><a href="/">github</a></li>
+                <li><a href="/">留言</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+{{/*<div class="picshow">*/}}
+    {{/*<ul>*/}}
+        {{/*<li><a href="/"><i><img src="../static/album/迪丽热巴甜美写真桌面壁纸/0.jpg"></i>*/}}
+            {{/*<div class="font">*/}}
+                {{/*<h3>这个需求我不做</h3>*/}}
+            {{/*</div>*/}}
+        {{/*</a></li>*/}}
+        {{/*<li><a href="/"><i><img src="../static/album/唯美动漫场景插画桌面壁纸/1.jpg"></i>*/}}
+            {{/*<div class="font">*/}}
+                {{/*<h3>从来不怠工</h3>*/}}
+            {{/*</div>*/}}
+        {{/*</a></li>*/}}
+        {{/*<li><a href="/"><i><img src="../static/album/唯美夏日风光图片高清壁纸/7.jpg"></i>*/}}
+            {{/*<div class="font">*/}}
+                {{/*<h3>要啥自行车</h3>*/}}
+            {{/*</div>*/}}
+        {{/*</a></li>*/}}
+        {{/*<li><a href="/"><i><img src="../static/album/迪丽热巴甜美写真桌面壁纸/0.jpg"></i>*/}}
+            {{/*<div class="font">*/}}
+                {{/*<h3>天天敲代码</h3>*/}}
+            {{/*</div>*/}}
+        {{/*</a></li>*/}}
+        {{/*<li><a href="/"><i><img src="../static/album/迪丽热巴甜美写真桌面壁纸/0.jpg"></i>*/}}
+            {{/*<div class="font">*/}}
+                {{/*<h3>全栈还是有点意思的</h3>*/}}
+            {{/*</div>*/}}
+        {{/*</a></li>*/}}
+    {{/*</ul>*/}}
+{{/*</div>*/}}
+<article>
+    <div class="blogs">
+
+    {{range .bolgList}}
+
+        <li><span class="blogpic"><a href="/"><img src="../static/album/性感长发美女写真图片壁纸/0.jpg"></a></span>
+            <h3 class="blogtitle">{{.Name}}</h3>
+            <div class="bloginfo">
+                <p>{{.Context}}</p>
+            </div>
+            <div class="autor">
+                <span class="lm">
+                    <a href="/" title="CSS3|Html5" target="_blank" class="classname">CSS3|Html5</a>
+                </span>
+                <span class="dtime">
+                    2019-08-06
+                </span>
+                <span class="viewnum">浏览（<a href="/">0</a>）
+                </span>
+                <span class="readmore">
+                    <a href="/blog/show/{{.Url}}">阅读原文</a>
+                </span>
+            </div>
+        </li>
+    {{end}}
+
+
+    </div>
+
+    <div class="sidebar">
+        <div class="about">
+            <div class="avatar"><img src="../static/img/yeyun.jpg" alt=""></div>
+            <p class="abname">dancesmile | 吴志辉</p>
+            <p class="abposition">全栈</p>
+            <div class="abtext">
+                最近在研究全栈，前端不熟，主要是实现后端的逻辑。涉及到负载均衡、性能优化、算法、数据库、nodejs插件、
+                go语言的框架、go的一些特性、session安全等等
+            </div>
+        </div>
+
+        <div class="cloud">
+            <h2 class="hometitle">标签云</h2>
+            <ul>
+                <a href="/blog/blockChain">区块链</a>
+                <a href="/blog/Cryptography">密码学</a>
+                <a href="/blog/Technology">技术栈</a>
+            </ul>
+        </div>
+
+        <div class="paihang">
+            <h2 class="hometitle">站长推荐</h2>
+            <ul>
+                <li><b><a href="/" target="_blank">【活动作品】柠檬绿兔小白个人博客模板30...</a></b>
+                    <p><i><img src="../static/img/yu01.jpg"></i>展示的是首页html，博客页面布局格式简单，没有复杂的背景，色彩局部点缀，动态的幻灯片展示，切换卡，标...</p>
+                </li>
+                <li><b><a href="/" target="_blank"> 个人博客模板（2014草根寻梦）30...</a></b>
+                    <p><i><img src="../static/img/yu01.jpg"></i>2014第一版《草根寻梦》个人博客模板简单、优雅、稳重、大气、低调。专为年轻有志向却又低调的草根站长设...</p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="links">
+            <h2 class="hometitle">友情链接</h2>
+            <ul>
+                <li><a href="https://github.com/CcoWzh" title="我的github">我的github</a></li>
+                <li><a href="/about" title="我的github">我的简历</a></li>
+            </ul>
+        </div>
+        <div class="weixin">
+            <h2 class="hometitle">我的微信</h2>
+            <ul>
+                <img src="../static/img/微信.jpg">
+            </ul>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <p>个人博客 <a href="/">HUI博客</a> <a href="/">西安电子科技大学</a></p>
+</footer>
+
+</body>
+</html>

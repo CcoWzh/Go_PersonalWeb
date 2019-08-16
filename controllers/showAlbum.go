@@ -11,8 +11,8 @@ type ShowAlbum struct {
 
 func (c* ShowAlbum) Get()  {
 	name := c.GetString("name")
-	path := "C:/Users/Administrator/Desktop/GoWEB/src/myHome/static/album/"
-	path1 := path+name
+	path := AlbunPath
+	path1 := path+"/"+name
 	fmt.Println(path1)
 
 	file := GetFile(path1)

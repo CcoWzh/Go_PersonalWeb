@@ -7,20 +7,15 @@ import (
 	"fmt"
 )
 
+const AlbunPath = "static/album"
+
 type Album struct {
 	beego.Controller
 }
 
 func (this* Album) Get()  {
-	path := "C:/Users/Administrator/Desktop/GoWEB/src/myHome/static/album"
 
-	dirList := GetDir(path)
-
-	//dirFile := []struct{
-	//	Dir string
-	//}{{dirList[1]},{dirList[2]},{dirList[10]}}
-	//
-	//fmt.Println(dirFile)
+	dirList := GetDir(AlbunPath)
 
 	type cc struct {
 		Dir1 string
@@ -34,17 +29,6 @@ func (this* Album) Get()  {
 
 	this.Data["dirList"] = v
 	this.TplName = "album.html"
-}
-
-func checkType(i interface{}) {
-	switch v := i.(type) {                            //这里是通过i.(type)来判断是什么类型  下面的case分支匹配到了 则执行相关的分支
-	case int:
-		fmt.Printf("%v is an int", v)
-	case string:
-		fmt.Printf("%v is string", v)
-	case bool:
-		fmt.Printf("%v is bool", v)
-	}
 }
 
 /**
