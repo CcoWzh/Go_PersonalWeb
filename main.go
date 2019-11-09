@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "myHome/routers"
+	_ "Go_PersonalWeb/routers"
 	"github.com/astaxie/beego"
 )
 

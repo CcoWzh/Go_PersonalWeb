@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"fmt"
-	"myHome/models"
+	"Go_PersonalWeb/models"
 )
 
 type SendEmail struct {

@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"myHome/controllers"
+	"Go_PersonalWeb/controllers"
 	"github.com/astaxie/beego"
 )
 
