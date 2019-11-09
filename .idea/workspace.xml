@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac730f83-5192-4666-a310-df7149c4e912" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/holder.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/love/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap-4.0.0/docs/4.0/examples/album/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap-4.0.0/docs/4.0/examples/album/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap-4.0.0/docs/4.0/examples/album/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/loveList.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/loveList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/showAlbum.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/showAlbum.html" afterDir="false" />
-    </list>
+    <list default="true" id="ac730f83-5192-4666-a310-df7149c4e912" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#14#80#0" expanded="true" />
               </folding>
@@ -56,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/loveList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="129" selection-start-line="129" selection-end-line="136" selection-end-column="47" />
+            <state relative-caret-position="-1877">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -71,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+            <state relative-caret-position="361">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -130,12 +99,12 @@
         <option value="$PROJECT_DIR$/views/about.html" />
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/views/index.html" />
-        <option value="$PROJECT_DIR$/views/loveList.html" />
         <option value="$PROJECT_DIR$/views/album.html" />
+        <option value="$PROJECT_DIR$/views/loveList.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="179" />
     <option name="y" value="86" />
     <option name="width" value="1666" />
@@ -157,61 +126,7 @@
             <path>
               <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="routers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-4.0.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-4.0.0" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="love" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="love" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="love" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -307,7 +222,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="179" y="86" width="1666" height="917" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24342929" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -633,16 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#14#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/jquery-slim.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -652,17 +556,27 @@
     <entry file="file://$PROJECT_DIR$/static/love/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/loveList.html">
+    <entry file="file://$PROJECT_DIR$/views/album.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="129" selection-start-line="129" selection-end-line="136" selection-end-column="47" />
+        <state relative-caret-position="361">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/album.html">
+    <entry file="file://$PROJECT_DIR$/views/loveList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        <state relative-caret-position="-1877">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#14#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
