@@ -31,6 +31,11 @@ func init() {
 	beego.Router("/about", &controllers.About{})
 
 	/**
+	我和她
+	 */
+	beego.Router("/she", &controllers.IAndShe{})
+
+	/**
 	抖音骚操作
 	 */
 	beego.Router("/list", &controllers.ShowLove{}, "get:GetList")

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Wedding Event - Free Html5 Templates</title>
+    <meta name="description" content="Free Responsive Html5 Css3 Templates">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="/static/css/zerogrid.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/static/css/mb-comingsoon-iceberg.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script src="/static/js/jquery-2.1.1.js"></script>
+
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5.js"></script>
+    <script src="/static/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+    <style type="text/css">
+        .words {
+            font-size: 150px;
+            font-family: 'Regular', cursive;
+            width: auto;
+            text-align: center;
+        }
+
+        .days {
+            font-size: 100px;
+            font-family: 'Rye', cursive;
+            width: auto;
+            text-align: center;
+        }
+
+        .days-label {
+            font-size: 54px;
+        }
+
+        .hours {
+            font-size: 100px;
+            font-family: 'Rye', cursive;
+            width: auto;
+            text-align: center;
+        }
+
+        .minutes {
+            font-size: 100px;
+            font-family: 'Rye', cursive;
+            width: auto;
+            text-align: center;
+        }
+
+        .seconds {
+            margin-top: 100px;
+            font-size: 50px;
+            font-family: "Monda_bo", Georgia, sans-serif;
+            width: auto;
+            text-align: center;
+        }
+
+        .seconds-label {
+            margin-top: 32px;
+            font-size: 32px;
+            font-family: "Monda_no", Georgia, sans-serif;
+            width: auto;
+            text-align: center;
+        }
+
+        .container {
+            position: absolute;
+        }
+
+        @font-face {
+            font-family: 'Regular';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Rye Regular'), local('Rye-Regular'), url('../static/love/first/1/jscss/text1.ttf') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Rye';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Rye Regular'), local('Rye-Regular'), url('../static/love/first/1/jscss/Clockopia.ttf') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Monda_no';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Monda'), local('Monda-Regular'), url('../static/love/first/1/jscss/Monda-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Monda_bo';
+            font-style: normal;
+            font-weight: bold;
+            src: local('Monda Bold'), local('Monda-Bold'), url('../static/love/first/1/jscss/Monda-Bold.ttf') format('truetype');
+        }
+
+    </style>
+    <!-- 开始计时-->
+    <script src="/static/love/first/1/jscss/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).resize(function () {
+            console.log(parseInt(($(window).width() - $('.container').outerWidth()) / 2) + 'px');
+            $('.container').css({
+                position: 'absolute',
+                left: ($(window).width() - $('.container').outerWidth()) / 2,
+                top: ($(window).height() - $('.container').outerHeight()) / 2
+            });
+            console.log($('.container').css('left'));
+        });
+
+        document.ready = function () {
+            $(window).resize();
+            updateNumbers();
+        };
+
+        // 修改时间，但是，我今生都不需要修改了
+        function updateNumbers() {
+            //var start_time = 1253980800;
+            var beginTime = "2019-11-3 20:15:00";
+            var start_time = Date.parse(beginTime)
+            // var start_time =  new Date("2014-11-11 10:10:10").Format("yyyy-MM-dd hh:mm:ss");
+            var duration = parseInt(Date.now() - start_time) / 1000;
+
+            var seconds = parseInt(duration % 60);
+            if (seconds < 10)
+                seconds = "0" + seconds;
+            duration = parseInt(duration / 60);
+            var minutes = duration % 60;
+            if (minutes < 10)
+                minutes = "0" + minutes;
+            duration = parseInt(duration / 60);
+            var hours = duration % 24;
+            if (hours < 10)
+                hours = "0" + hours;
+            duration = parseInt(duration / 24);
+            var days = duration;
+            $('.days-number').text("" + days);
+            $('.seconds').text("" + seconds);
+            $('.hours').text("" + hours);
+            $('.minutes').text("" + minutes);
+            setTimeout("updateNumbers()", 1000);
+        }
+    </script>
+
+</head>
+<body>
+<div class="wrap-body">
+
+    <!--////////////////////////////////////Header-->
+    <header>
+        <div class="wrap-header">
+            <div class="main-header">
+                <div class="zerogrid">
+                    <h1>相遇，似一封漫长的情书</h1>
+
+
+                        <div class="counter-group">
+                            <div class="counter-block">
+                                <div class="counter days">
+                                    <span class="days-number">000</span>
+                                </div>
+                                <div class="counter-caption">days</div>
+                            </div>
+
+                            <div class="counter-block">
+                                <div class="counter days">
+                                    <span class="hours">000</span>
+                                </div>
+                                <div class="counter-caption">hours</div>
+                            </div>
+
+                            <div class="counter-block">
+                                <div class="counter days">
+                                    <span class="minutes">000</span>
+                                </div>
+                                <div class="counter-caption">minutes</div>
+                            </div>
+                            <div class="counter-block">
+                                <div class="counter days">
+                                    <span class="seconds">000</span>
+                                </div>
+                                <div class="counter-caption">seconds</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--////////////////////////////////////Container-->
+    <section id="container">
+        <div class="wrap-container">
+            <!-----------------content-box-1-------------------->
+            <section class="content-box boxstyle-1 box-1">
+                <div class="zerogrid">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <div class="col-1-2">
+                            <div class="col-3-5">
+                                <div class="wrap-col">
+                                    <h1>HE <br>PROPOSED</h1>
+                                    <p> got down on one knee, knees shaking, voice trembling and said: “Will you marry
+                                        me, please?”. She started loughig, then crying. Then she replied: “Of course, I
+                                        will, you silly!”</p>
+                                </div>
+                            </div>
+                            <div class="col-2-5">
+                                <div class="wrap-col">
+                                    <img src="/static/img/me.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-2">
+                            <div class="col-3-5 fix-right">
+                                <div class="wrap-col">
+                                    <h1>SHE <br>SAID yes!</h1>
+                                    <p>Reaction? Of course, I told him yes. Tell him yes. Even if you are dying of fear,
+                                        even if you are sorry later, because whatever you do, you will be sorry all the
+                                        rest of your life if you say no.</p>
+                                </div>
+                            </div>
+                            <div class="col-2-5">
+                                <div class="wrap-col">
+                                    <img src="/static/img/test.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
+            <!-----------------content-box-2-------------------->
+            <section class="content-box boxstyle-2 box-2">
+                <div class="zerogrid" style="width: 100%;">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <div class="header">
+                            <div class="wrapper">
+                                <h2 class="color-yellow">我们</h2>
+                                <hr class="line">
+                                <div class="intro">生活照，秀恩爱</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1-3">
+                                <div class="item-container">
+                                    <div class="item-caption">
+                                        <div class="item-caption-inner">
+                                            <div class="item-caption-inner1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/static/img/images/kids2-thumb.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="item-container">
+                                    <div class="item-caption">
+                                        <div class="item-caption-inner">
+                                            <div class="item-caption-inner1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/static/img/images/kids3-thumb.jpg"/>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="item-container">
+                                    <div class="item-caption">
+                                        <div class="item-caption-inner">
+                                            <div class="item-caption-inner1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/static/img/images/kids4-thumb.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------content-box-3-------------------->
+            <section class="content-box boxstyle-3 box-3">
+                <div class="zerogrid">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <h3>给你的情话 <span>用一辈子来说!</span></h3>
+                        <img src="/static/img/三行情书.jpg"/>
+                        <p>我一辈子走过许多地方的路，
+                            行过许多地方的桥，
+                            看过许多次数的云，
+                            喝过许多种类的酒，
+                            却只爱过一个正当年龄的人。</p>
+                        <p>
+                            我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法。
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------content-box-4-------------------->
+            <section class="content-box boxstyle-1 box-4">
+                <div class="zerogrid">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <div class="header">
+                            <div class="wrapper">
+                                <h2 class="color-yellow">我们的博客</h2>
+                                <hr class="line">
+                                <div class="intro">恋爱旅游日记</div>
+                            </div>
+                        </div>
+                        <div class="row"><!--Start Box-->
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids4-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>云南行</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法</p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids3-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>贵阳·开启恋爱之旅</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法</p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids2-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>西安</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法</p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><!--Start Box-->
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids3-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>故乡·母校</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法 </p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids4-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>苏州</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法</p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col item">
+                                    <div class="zoom-container">
+                                        <img src="/static/img/images/kids2-thumb.jpg"/>
+                                    </div>
+                                    <div class="item-content">
+                                        <span>沈阳·梦开始的地方</span>
+                                        <p>我一天一天明白你的平凡，同时却一天一天愈更深切地爱你。
+                                            你如同照镜子，你不会看得见你特别好的所在，但你如走进我的心里来时，你一定能知道自己是怎样好法</p>
+                                        <a class="button" href="single.html">More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------content-box-5-------------------->
+            <section class="content-box boxstyle-2 box-5">
+                <div class="zerogrid">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <div class="header">
+                            <div class="wrapper">
+                                <h2>Our Friends</h2>
+                                <hr class="line">
+                                <div class="intro">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1-2">
+                                <div class="row post">
+                                    <div class="col-2-6">
+                                        <div class="wrap-col wrapper">
+                                            <a href="#"><img src="/static/img/images/ava-4.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4-6">
+                                        <div class="wrap-col">
+                                            <h3>Craig Herrera</h3>
+                                            <span>Best Man</span>
+                                            <p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum
+                                                oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
+                                            <ul class="social-buttons">
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row post">
+                                    <div class="col-2-6">
+                                        <div class="wrap-col wrapper">
+                                            <a href="#"><img src="/static/img/images/ava-6.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4-6">
+                                        <div class="wrap-col">
+                                            <h3>Sheryl Wilson</h3>
+                                            <span>Bridesmaid</span>
+                                            <p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum
+                                                oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
+                                            <ul class="social-buttons">
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1-2">
+                                <div class="row post">
+                                    <div class="col-2-6 right">
+                                        <div class="wrap-col wrapper">
+                                            <a href="#"><img src="/static/img/images/ava-7.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4-6">
+                                        <div class="wrap-col">
+                                            <h3>Sheryl Wilson</h3>
+                                            <span>Bridesmaid</span>
+                                            <p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum
+                                                oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
+                                            <ul class="social-buttons">
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row post">
+                                    <div class="col-2-6 right">
+                                        <div class="wrap-col wrapper">
+                                            <a href="#"><img src="/static/img/images/ava-8.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4-6">
+                                        <div class="wrap-col">
+                                            <h3>Craig Herrera</h3>
+                                            <span>Best Man</span>
+                                            <p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum
+                                                oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
+                                            <ul class="social-buttons">
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-----------------content-box-6-------------------->
+            <section class="content-box boxstyle-1 box-6">
+                <div class="zerogrid">
+                    <div class="row wrap-box"><!--Start Box-->
+                        <div class="header">
+                            <div class="wrapper">
+                                <h2 class="color-yellow">LOCATION</h2>
+                                <hr class="line">
+                                <div class="intro">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1-3">
+                                <div class="wrap-col">
+                                    <i class="fa fa-map-marker"></i>
+                                    <h3>Location</h3>
+                                    <p>The wedding party will begin @ <span>14:00 P.M</span> on <span>Monday July 23, 2015</span>
+                                        . Free drinks and music is on the way, no costume is needed.</p>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col">
+                                    <i class="fa fa-phone"></i>
+                                    <h3>Location</h3>
+                                    <p>Gulshan Hall, 60 Grant Ave. Carteret NJ 0708 (732) 803-01 03, (732) 806-01 04
+                                        info@emailname.com</p>
+                                </div>
+                            </div>
+                            <div class="col-1-3">
+                                <div class="wrap-col">
+                                    <i class="fa fa-envelope"></i>
+                                    <h3>Location</h3>
+                                    <p><span>Eevent One :</span> Event Name and Time <br><span>Eevent Two :</span> Event
+                                        Name and Time <br><span>Eevent Three :</span> Event Name and Time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!--////////////////////////////////////Footer-->
+    <footer>
+
+        <div class="wrap-footer">
+            <div class="zerogrid">
+                <div class="row">
+                    <h3>我们</h3>
+                    <span>Phone / +80 999 99 9999 </span></br>
+                    <span>Email / info@domain.com  </span></br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Map -->
+    <script>
+        $('.maps').click(function () {
+            $('.maps iframe').css("pointer-events", "auto");
+        });
+
+        $(".maps").mouseleave(function () {
+            $('.maps iframe').css("pointer-events", "none");
+        });
+    </script>
+
+    <!-- Countdown -->
+    <script src="/static/js/jquery.mb-comingsoon.min.js"></script>
+
+    {{/*<script type="text/javascript">*/}}
+    {{/*$(function () {*/}}
+    {{/*$('#myCounter').mbComingsoon({expiryDate: new Date(2019, 11, 14, 20, 30), speed: 10});*/}}
+    {{/*setTimeout(function () {*/}}
+    {{/*$(window).resize();*/}}
+    {{/*}, 200);*/}}
+    {{/*});*/}}
+    {{/*</script>*/}}
+
+</div>
+</body>
+</html>
