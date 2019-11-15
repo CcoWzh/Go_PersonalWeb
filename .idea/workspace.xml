@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac730f83-5192-4666-a310-df7149c4e912" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/i_she.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/mb-comingsoon-iceberg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/zerogrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/zerostyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/css3-mediaqueries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/html5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.mb-comingsoon.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/she.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/about.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/我.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/love1.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/love1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/love2.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/love2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/loveList.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/loveList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/she.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/she.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,28 +43,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/she.html">
+        <entry file="file://$PROJECT_DIR$/views/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="607" column="63" selection-start-line="607" selection-start-column="63" selection-end-line="607" selection-end-column="63" />
+            <state relative-caret-position="425">
+              <caret line="354" column="41" lean-forward="true" selection-start-line="354" selection-start-column="41" selection-end-line="354" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+        <entry file="file://$PROJECT_DIR$/static/css/about.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="77" column="82" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/love1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+            <state relative-caret-position="14782">
+              <caret line="778" column="1" selection-start-line="778" selection-start-column="1" selection-end-line="778" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -127,8 +106,6 @@
         <option value="$PROJECT_DIR$/views/blockchain.html" />
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/views/album.html" />
-        <option value="$PROJECT_DIR$/views/about.html" />
-        <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/loveList.html" />
         <option value="$PROJECT_DIR$/views/love2.html" />
         <option value="$PROJECT_DIR$/controllers/i_she.go" />
@@ -137,12 +114,14 @@
         <option value="$PROJECT_DIR$/views/love1.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/views/she.html" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/static/css/about.css" />
+        <option value="$PROJECT_DIR$/views/about.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="9" />
+    <option name="x" value="192" />
     <option name="width" value="1666" />
     <option name="height" value="917" />
   </component>
@@ -158,6 +137,17 @@
             <path>
               <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go_PersonalWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Go_PersonalWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -252,10 +242,10 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="9" width="1666" height="917" extended-state="0" />
+    <frame x="192" y="0" width="1666" height="917" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26220274" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26971215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -284,13 +274,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/ionicons.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -483,13 +466,6 @@
     <entry file="file://$PROJECT_DIR$/static/love/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/blockchain.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2413">
@@ -501,13 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -588,6 +557,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="77" column="82" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/love1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1406">
@@ -595,10 +571,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="77" column="82" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
+        <state relative-caret-position="1026">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/she.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="434" lean-forward="true" selection-start-line="434" selection-end-line="434" />
         </state>
       </provider>
     </entry>
@@ -612,10 +595,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/she.html">
+    <entry file="file://$PROJECT_DIR$/static/css/about.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="607" column="63" selection-start-line="607" selection-start-column="63" selection-end-line="607" selection-end-column="63" />
+        <state relative-caret-position="14782">
+          <caret line="778" column="1" selection-start-line="778" selection-start-column="1" selection-end-line="778" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="354" column="41" lean-forward="true" selection-start-line="354" selection-start-column="41" selection-end-line="354" selection-end-column="41" />
         </state>
       </provider>
     </entry>
